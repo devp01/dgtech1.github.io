@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGTech Consultancy | Future-Ready Tech Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* --- BRAND COLORS --- */
+        :root {
+            --primary-navy: #0A2647;
+            --accent-teal: #2C7A7B;
+            --light-bg: #F4F9F9;
+            --white: #ffffff;
+            --text-dark: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            background: var(--primary-navy);
+            padding: 1rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: var(--white);
+            font-weight: bold;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .logo span { color: var(--accent-teal); }
+
+        nav ul { display: flex; list-style: none; }
+
+        nav ul li { margin-left: 2rem; }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover { color: var(--accent-teal); }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, #144272 100%);
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            background: var(--accent-teal);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #246667;
+            transform: translateY(-2px);
+        }
+
+        /* --- SERVICES SECTION --- */
+        .services {
+            padding: 80px 10%;
+            background: var(--light-bg);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            color: var(--primary-navy);
+            font-size: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+
+        .card i {
+            font-size: 2.5rem;
+            color: var(--accent-teal);
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-navy);
+        }
+
+        /* --- CONTACT & FOOTER --- */
+        footer {
+            background: var(--primary-navy);
+            color: var(--white);
+            padding: 60px 10% 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav ul { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">DGTech<span>Consultancy</span></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Intelligent Tech Solutions for Tomorrow</h1>
+        <p>Empowering businesses through AI Enablement, Fintech Innovation, and End-to-End Product Engineering.</p>
+        <a href="#contact" class="btn">Start a Project</a>
+    </section>
+
+    <section class="services" id="services">
+        <div class="section-title">
+            <h2>Our Expertise</h2>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-brain"></i>
+                <h3>AI Enablement</h3>
+                <p>Harness the power of Artificial Intelligence to automate workflows and drive insights.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Fintech Solutions</h3>
+                <p>Building secure, scalable financial ecosystems designed for the modern economy.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Product Engineering</h3>
+                <p>Turning complex ideas into high-performing digital products with agile delivery.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div>
+                <h3>DGTech Consultancy</h3>
+                <p>Your partner in digital transformation.</p>
+            </div>
+            <div>
+                <h4>Contact Us</h4>
+                <p>Email: hello@dgtechconsultancy.com</p>
+                <p>Location: Ernakulam, Kerala</p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <p>LinkedIn | Twitter</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 DGTech Consultancy Private Limited. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
