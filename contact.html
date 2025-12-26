@@ -8,13 +8,15 @@
 </head>
 <body>
 <h1>Contact Us</h1>
-<form action="https://getform.io/f/amdjmpyb" method="POST">
-<input type="text" name="name" placeholder="Your Name" required />
-<input type="email" name="email" placeholder="Your Email" required />
-<textarea name="message" placeholder="Your Message" required></textarea>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="013f3aaf-3b93-4c61-960b-283017af5815">
+  <input type="text" name="name" required> <br>
+  <input type="email" name="email" required> <br>
+  <textarea name="message" required></textarea>
 
   <input type="hidden" name="cf-turnstile-response" id="cf-turnstile-response">
-<div class="cf-turnstile" data-sitekey="0x4AAAAAACI7o6JPUCzwH18c"></div>
+<div class="cf-turnstile" data-sitekey="0x4AAAAAACI7o6JPUCzwH18c" data-callback="turnstileCallback"></div>
 
 
 <button type="submit">Send</button>
