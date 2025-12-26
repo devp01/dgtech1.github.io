@@ -1,29 +1,45 @@
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-line-height: 1.6;
+/* Base */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; line-height:1.6; background:#f9f9f9; color:#333; }
+
+/* Containers */
+.container { width: 90%; max-width:1200px; margin:0 auto; }
+
+/* Navigation */
+.nav { background:#ffffff; border-bottom:1px solid #ddd; padding:1rem 0; position:sticky; top:0; z-index:1000; display:flex; justify-content:space-between; align-items:center; }
+.nav .logo img { height:50px; }
+.nav nav a { margin-left:1rem; font-weight:bold; color:#004b8d; transition:0.3s; }
+.nav nav a:hover { color:#007bff; }
+
+/* Hero Section */
+.hero { background: linear-gradient(135deg, #004b8d 0%, #00a1b5 100%); color:#fff; text-align:center; padding:4rem 2rem; }
+.hero h2 { font-size:2.5rem; margin-bottom:1rem; }
+.hero p { font-size:1.2rem; }
+
+/* Sections */
+section { padding:2rem 0; background:#fff; margin-bottom:1rem; }
+section h3 { font-size:1.8rem; margin-bottom:1rem; color:#004b8d; }
+
+/* Cards */
+.cards { display:flex; flex-wrap:wrap; gap:1rem; justify-content:space-around; }
+.card { flex:1 1 250px; padding:1rem; border:1px solid #ddd; border-radius:4px; background:#f0f8ff; text-align:center; }
+
+/* Buttons */
+.btn { display:inline-block; padding:0.75rem 1.5rem; background:#004b8d; color:#fff; border-radius:4px; font-weight:bold; text-align:center; cursor:pointer; transition:0.3s; }
+.btn:hover { background:#007bff; }
+
+/* Forms */
+form { max-width:500px; margin:0 auto; display:flex; flex-direction:column; }
+form input, form textarea { margin-bottom:0.75rem; padding:0.75rem; border:1px solid #aaa; border-radius:4px; }
+form button { border:none; cursor:pointer; }
+
+/* Footer */
+.footer { text-align:center; padding:2rem 0; background:#fff; border-top:1px solid #ddd; }
+.footer p { color:#555; }
+
+/* Responsive */
+@media(max-width:768px) {
+  .nav nav { display:flex; flex-direction:column; }
+  .cards { flex-direction:column; align-items:center; }
 }
-header {
-background: #0f172a;
-color: #fff;
-padding: 15px;
-}
-nav a {
-color: #fff;
-margin-right: 15px;
-text-decoration: none;
-}
-.hero {
-padding: 40px;
-background: #e5e7eb;
-}
-section {
-padding: 20px;
-}
-footer {
-background: #0f172a;
-color: white;
-text-align: center;
-padding: 10px;
-}
+
