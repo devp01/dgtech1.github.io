@@ -17,5 +17,16 @@
 
 <h2>How Students Can Start a Career in DevOps</h2>
 <p>Learn Linux, cloud basics, CI/CD and work on real-world DevOps projects.</p>
+
+<div id="footer"></div>
+
+<script>
+fetch("/footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
 </body>
 </html>

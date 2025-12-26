@@ -36,9 +36,14 @@
 </ul>
 </section>
 
+<div id="footer"></div>
 
-<footer>
-<p>© 2025 DGTech Consultancy Private Limited</p>
-</footer>
+<script>
+fetch("/footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
 </body>
 </html>
