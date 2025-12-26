@@ -3,7 +3,20 @@
 <head>
 <meta charset="UTF-8" />
 <title>Contact DGTech Consultancy</title>
-<link rel="stylesheet" href="assets/css/style.css" />
+<!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+<style>
+        /* Simple CSS for better presentation - optional */
+        body { font-family: sans-serif; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="text"], input[type="email"], textarea {
+            width: 300px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+    </style>
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
@@ -11,9 +24,9 @@
 
 <form action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value="013f3aaf-3b93-4c61-960b-283017af5815">
-  <input type="text" name="name" required> <br>
-  <input type="email" name="email" required> <br>
-  <textarea name="message" required></textarea>
+  <input type="text" name="name" placeholder="Your Name" required> <br>
+  <input type="email" name="email" placeholder="Your Email" required> <br>
+  <textarea name="message" placeholder="Enter your message" required></textarea>
 
   <input type="hidden" name="cf-turnstile-response" id="cf-turnstile-response">
 <div class="cf-turnstile" data-sitekey="0x4AAAAAACI7o6JPUCzwH18c" data-callback="turnstileCallback"></div>
