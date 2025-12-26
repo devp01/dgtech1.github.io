@@ -46,6 +46,15 @@ nav {
   align-items: center;
 }
 
+.logo { color: white; font-size: 1.5rem; font-weight: bold; }
+.logo span { color: var(--teal); }
+
+.nav-right-group {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between links and the logo */
+}
+
 nav a {
   color: white;
   text-decoration: none;
