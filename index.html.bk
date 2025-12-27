@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>DGTech Consultancy | DevOps Training & DevOps Consultancy</title>
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+
+  <meta name="description" content="DGTech Consultancy provides industry-focused DevOps training, cloud projects, CI/CD automation, Kubernetes consulting and DevOps services for startups and enterprises." />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <nav>
+    <div class="logo">
+      <strong>DGTech Consultancy</strong>
+    </div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#training">Training</a>
+      <a href="#blog">Blog</a>
+      <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
+    </div>
+        <div class="logo-container">
+            <img src="images/dgtechweb.png" alt="DGTech Logo" width="250" height="100"  class="main-logo">
+        </div>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <h1>DevOps Consulting, Training & Cloud Solutions</h1>
+  <p>
+    <strong>Innovate. Transform. Succeed.</strong><br />
+    Delivering top-notch DevOps solutions for modern businesses.
+  </p>
+
+  <p>
+    <strong>DevOps Training Services</strong><br />
+    Industry-focused DevOps training, real-world cloud projects, CI/CD automation and Kubernetes consulting.
+  </p>
+
+  <a href="contact.html" class="btn" target="_blank" rel="noopener noreferrer">Get in Touch</a>
+</section>
+
+<!-- ================= OFFERINGS ================= -->
+<section class="section-dark">
+  <h2>Our Offerings</h2>
+
+  <div class="cards">
+    <div class="card">DevOps Training Programs</div>
+    <div class="card">Cloud & Kubernetes Projects</div>
+    <div class="card">CI/CD Pipeline Implementation</div>
+    <div class="card">DevOps Consultancy for Startups & Enterprises</div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <h2>DevOps Consultancy Services</h2>
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    We help organizations design, implement and scale DevOps practices to improve reliability, speed and security.
+  </p>
+
+  <div class="cards" style="margin-top:40px;">
+    <div class="card">CI/CD Pipeline Design & Automation</div>
+    <div class="card">Kubernetes & Container Orchestration</div>
+    <div class="card">Cloud Architecture (AWS, Azure, GCP)</div>
+    <div class="card">Infrastructure as Code (Terraform)</div>
+    <div class="card"><a href="/devsecops.html" target="_blank" rel="noopener noreferrer">DevSecOps Implementation</a></div>
+  </div>
+</section>
+
+<!-- ================= TRAINING ================= -->
+<section id="training" class="section-dark">
+  <h2>DevOps Training</h2>
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    Job-oriented DevOps training with real-world projects and hands-on labs.
+  </p>
+
+  <div class="cards" style="margin-top:40px;">
+    <div class="card">Linux & Git</div>
+    <div class="card">Docker & Kubernetes</div>
+    <div class="card">AWS DevOps</div>
+    <div class="card">CI/CD using Jenkins & GitHub Actions</div>
+  </div>
+</section>
+
+<!-- ================= BLOG ================= -->
+<section id="blog">
+  <h2>DevOps Learning Resources</h2>
+
+  <div class="cards">
+    <div class="card">
+
+<section class="devops-highlight">
+  <div class="devops-card">
+      <h3>DevOps Introduction: A Technical Guide to Modern Software Delivery</h3>
+      <h4> What Is DevOps?</h4>
+      <p>
+DevOps is a software engineering methodology that integrates software development (Dev) and IT operations (Ops) to enable faster, more reliable application delivery. 
+</p>
+<p>
+From a technical perspective, DevOps focuses on eliminating bottlenecks between code creation, testing, deployment, and infrastructure management by using automated pipelines and cloud-native technologies.      
+</p><br>
+<h4>
+DevOps Architecture and Workflow</h4>
+
+    <a href="devops-workflow.html" class="devops-cta" target="_blank" rel="noopener noreferrer">
+      Learn More →
+    </a>
+  </div>
+</section>
+
+</div>
+
+    <div class="card">
+<section class="devops-highlight">
+  <div class="devops-card">
+    <h3>Top DevOps Tools You Must Learn in 2026</h3>
+<br>
+
+<p>
+Stay ahead in 2026 by mastering essential DevOps tools that enable faster releases, smarter automation, and scalable cloud-native architectures used by leading technology organizations worldwide.
+</p><br>
+    <p>
+      Docker, Kubernetes, Jenkins, GitHub Actions, Terraform, and AWS are
+      essential DevOps skills for building scalable, automated, and secure
+      cloud-native systems.
+    </p>
+<br>
+    <a href="devops-skills.html" class="devops-cta" target="_blank" rel="noopener noreferrer">
+      Explore DevOps Skills →
+    </a>
+  </div>
+</section>    
+</div>
+
+    <div class="card">
+<section class="devops-highlight">
+  <div class="devops-card">
+      <h3>Infrastructure Modernization Using IaC -A Case Study</h3>
+<br> <p class="devops-subtitle"> <strong>Objective</strong></p>
+      <p>
+Modernize the existing cloud infrastructure to improve security, reliability, and operational efficiency while establishing a scalable foundation aligned with cloud best practices.       
+</p>
+<br> <p class="devops-subtitle"><strong>Existing issues</strong></p>
+<p> 
+
+The legacy environment relied on default cloud configurations and manual provisioning. While operational, it introduced elevated security exposure, limited governance, and inconsistent deployment practices across environments.</p>
+
+<a href="https://www.dgtechconsultancy.com/case_study1.html" class="devops-cta" target="_blank" rel="noopener noreferrer">Read more...</a>
+  </div>
+</section>
+  </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2025 DGTech Consultancy Private Limited</p>
+  <p>
+     <a href="/privacy.html"  target="_blank" rel="noopener noreferrer">Privacy Policy </a> |
+    <a href="/terms.html"  target="_blank" rel="noopener noreferrer">Terms </a> |
+    <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact Us</a>
+  </p>
+</footer>
+
+<div id="footer"></div>
+
+<!-- <script>
+fetch("/footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script> -->
+
+</body>
+</html>
+
