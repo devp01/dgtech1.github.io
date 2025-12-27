@@ -1,26 +1,21 @@
 :root {
-  /* Brand Colors (Logo-aligned) */
-  --primary: #1F4FB2;          /* Brand Blue */
-  --secondary: #3FA9B5;        /* Brand Teal */
-  --accent: #F4A261;           /* Warm CTA */
-  --accent-soft: #F6C453;      /* Highlights */
+  /* Brand Colors */
+  --primary: #2F6EDB;
+  --secondary: #4EC1D3;
+  --accent: #6EE7F2;
 
-  /* Backgrounds (Light Theme) */
-  --bg-main: #F9FBFD;          /* Main page background */
-  --bg-section: #FFFFFF;       /* Cards / sections */
-  --bg-soft: #EEF4F8;          /* Alternate sections */
+  /* Dark Theme */
+  --bg-main: #1F262A;
+  --bg-section: #2A3237;
 
   /* Text */
-  --text-main: #1F2933;        /* Headings */
-  --text-body: #4B5563;        /* Paragraphs */
-  --text-muted: #6B7280;       /* Subtle text */
+  --text-main: #F3F4F6;
+  --text-muted: #9CA3AF;
 
   /* UI */
-  --border: #DCE3EA;
-  --shadow: rgba(31, 79, 178, 0.08);
+  --border: #3A444A;
+  --shadow: rgba(0, 0, 0, 0.3);
 }
-
-/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,15 +29,14 @@ html {
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--bg-main);
-  color: var(--text-body);
+  color: var(--text-main);
   line-height: 1.6;
 }
-
-/* Header / Navigation */
 header {
   background: linear-gradient(90deg, var(--primary), var(--secondary));
   padding: 20px 0;
-  box-shadow: 0 6px 20px var(--shadow);
+  box-shadow: 0 4px 10px var(--shadow);
+
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -56,30 +50,25 @@ nav {
   align-items: center;
 }
 
-.logo {
-  color: #FFFFFF;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+.logo { color: white; font-size: 1.5rem; font-weight: bold; }
+.logo span { color: var(--teal); }
 
 .nav-right-group {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between links and the logo */
 }
 
 nav a {
-  color: #FFFFFF;
+  color: white;
   text-decoration: none;
   margin-left: 20px;
   font-weight: 500;
 }
 
 nav a:hover {
-  color: var(--accent-soft);
+  color: var(--accent);
 }
-
-/* Hero */
 .hero {
   text-align: center;
   padding: 100px 20px;
@@ -88,7 +77,6 @@ nav a:hover {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: var(--text-main);
 }
 
 .hero p {
@@ -97,42 +85,35 @@ nav a:hover {
   color: var(--text-muted);
   font-size: 1.1rem;
 }
-
-/* Buttons */
 .btn {
   display: inline-block;
   margin-top: 30px;
   padding: 14px 28px;
-  background: var(--accent);
-  color: #1F2933;
+  background: var(--secondary);
+  color: #0b1c20;
   text-decoration: none;
   font-weight: 600;
   border-radius: 8px;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
-  background: var(--accent-soft);
+  background: var(--accent);
   transform: translateY(-2px);
 }
-
-/* Sections */
 section {
   padding: 80px 20px;
 }
 
 .section-dark {
-  background: var(--bg-soft);
+  background: var(--bg-section);
 }
 
 section h2 {
   text-align: center;
   margin-bottom: 40px;
   font-size: 2.2rem;
-  color: var(--text-main);
 }
-
-/* Cards */
 .cards {
   max-width: 1100px;
   margin: auto;
@@ -142,77 +123,65 @@ section h2 {
 }
 
 .card {
-  background: var(--bg-section);
+  background: var(--bg-main);
   padding: 30px;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid var(--border);
-  box-shadow: 0 10px 30px var(--shadow);
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .card:hover {
   border-color: var(--secondary);
-  transform: translateY(-6px);
+  transform: translateY(-5px);
 }
-
-/* Forms */
 form {
   max-width: 600px;
   margin: auto;
 }
 
-input,
-textarea {
+input, textarea {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
-  background: #FFFFFF;
+  background: var(--bg-main);
   border: 1px solid var(--border);
   border-radius: 6px;
-  color: var(--text-body);
+  color: var(--text-main);
 }
 
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
   outline: none;
   border-color: var(--secondary);
-  box-shadow: 0 0 0 3px rgba(63, 169, 181, 0.15);
 }
 
 button {
   width: 100%;
   padding: 14px;
   background: var(--primary);
-  color: #FFFFFF;
+  color: white;
   font-weight: 600;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
 button:hover {
   background: var(--secondary);
 }
-
 .cf-turnstile {
   margin: 20px 0;
 }
-
-/* Footer */
 footer {
-  background: linear-gradient(90deg, #1F4FB2, #163A7A);
+  background: #111;
   padding: 30px 20px;
   text-align: center;
-  color: #E5E7EB;
+  color: var(--text-muted);
 }
 
 footer a {
-  color: var(--accent-soft);
+  color: var(--secondary);
   text-decoration: none;
 }
-
-/* Responsive */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.2rem;
